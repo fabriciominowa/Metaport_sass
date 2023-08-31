@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background: linear-gradient(150deg, rgb(9, 0, 57) 79.2%, rgb(128, 1, 150) 20%, rgb(117, 3, 166) 30%);
+  height: 60px;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.menu {
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#barras {
+  display: none;
+}
+
+.icone-menu {
+  height: 40px;
+}
+
+@media screen and (max-width: 1100px) {
+  cabecalho {
+    position: relative;
+  }
+  .menu {
+    display: none;
+    position: absolute;
+    top: 80px;
+    right: 0px;
+    height: 400px;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #1E1C21;
+    align-items: center;
+  }
+  .menu-ativo {
+    display: flex;
+  }
+  #barras {
+    display: inline-block;
+  }
+}/*# sourceMappingURL=header.component.css.map */
