@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.sass']
 })
 export class HomeComponent {
-
+  fileUrl = 'https://example.com/path/to/your/file.pdf';
+  fileName = 'example-file.pdf'
 }
